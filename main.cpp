@@ -123,7 +123,6 @@ void alarmOff(int A[],int B[],int a)
     a++;
     delay(200);
     }
-   
     if(A[0]==B[0] && A[1]==B[1] && A[2]==B[2] && A[3]==B[3])    //comparing elements correct password array and the user inputted password
     {
         digitalWrite(4,LOW);                                    //switching off buzzer
@@ -132,11 +131,5 @@ void alarmOff(int A[],int B[],int a)
         lcdBacklightColour(0,235,0);
         flag=0;                                                //bool variable changed back to false
         delay(1000);
-   
     }
-   
- 
- 
- 
- 
 }
