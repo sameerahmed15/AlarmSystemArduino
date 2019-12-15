@@ -5,7 +5,7 @@
 #include <seeed-kit.h>
 bool flag=0;     //bool variable initialised
 
-/**alarmOff*******************************************************
+/**alarmOff******************************************************
 Checks if the password entered by the user is correct and deactivates
 the alarm
 
@@ -31,21 +31,15 @@ init();
 
 digitalRead(4);   //reading the port D4
 lcdInit();       //lcd initialisation
- 
-
-
+  
  while(true)
  {
    loop();
    delay(100);
-   lcdClear();
-   
+   lcdClear();  
  }
-
   return 0;
 }
- 
-
 // test code for Grove - Sound Sensor
 
 const int pinAdc = A0;
@@ -88,17 +82,11 @@ void loop()
     int Pass[]={1,1,1,1};          //array initialisation
     int userPass[]={0,0,0,0};
     int c=0;                        
-    alarmOff(Pass,userPass,c);
-   
-   
+    alarmOff(Pass,userPass,c);  
 }
-
-
 //function definition
 void alarmOff(int A[],int B[],int a)    
 {
- 
-
   while(a<4)                   //a version of while loop used which is defined very similarly as typical for loops
  
     {
